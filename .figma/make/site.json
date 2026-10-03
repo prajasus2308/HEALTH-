@@ -1,0 +1,11 @@
+{
+  "title": "CULTIVA>HEALTH",
+  "description": "Empowers farmers with AI-driven crop disease diagnosis, real-time advice, and farming insights to optimize crop health and boost productivity.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

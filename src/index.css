@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-forest: #1b4332;
+  --color-forest-light: #245c43;
+  --color-forest-dark: #102d22;
+  --color-emerald: #2f9364;
+  --color-mint: #95d5b2;
+  --color-mint-pale: #e9f7ed;
+  --color-slate: #1e293b;
+  --color-muted: #64748b;
+  --color-canvas: #f8faf9;
+  --color-surface: #f4f7f5;
+  --color-line: #e2e8e4;
+  --color-line-strong: #cbd8d0;
+  --color-amber: #b7791f;
+  --color-amber-pale: #fff7e6;
+  --color-sky: #287aa1;
+  --color-sky-pale: #eaf6fb;
+  --radius-hero: 1.75rem;
+  --radius-dashboard: 1.5rem;
+  --shadow-button: 0 6px 18px rgba(27, 67, 50, 0.18);
+  --shadow-card: 0 18px 45px rgba(15, 43, 32, 0.14);
+  --shadow-hero: 0 32px 80px rgba(15, 43, 32, 0.2);
+  --shadow-dashboard: 0 28px 90px rgba(20, 50, 38, 0.1);
+  --spacing-site: 76rem;
+  --spacing-card: 23rem;
+  --spacing-hero-image: 36rem;
+  --spacing-chat: 43rem;
+  --text-hero: 4.25rem;
+  --text-tiny: 0.625rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--color-canvas);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+a,
+input,
+textarea {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-emerald);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.hero-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(1px);
+  pointer-events: none;
+}
+
+.hero-orb-one {
+  width: 34rem;
+  height: 34rem;
+  right: -15rem;
+  top: -10rem;
+  background: radial-gradient(circle, rgba(82, 183, 136, 0.13), transparent 68%);
+}
+
+.hero-orb-two {
+  width: 26rem;
+  height: 26rem;
+  left: -17rem;
+  bottom: -10rem;
+  background: radial-gradient(circle, rgba(149, 213, 178, 0.16), transparent 70%);
+}
+
+@media (max-width: 640px) {
+  .hero-orb-one {
+    width: 22rem;
+    height: 22rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    transition-duration: 0.01ms !important;
+  }
+}
